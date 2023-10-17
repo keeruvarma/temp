@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: lightslategrey;
+}
+
+.temp-container {
+    background:#E0B0FF;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 3px rgb(15, 8, 8);
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.header-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icon-temperature {
+    font-size: 45px;
+    color: #ffff;
+}
+
+h1 {
+    color: #ffff;
+    letter-spacing: 1.2;
+    font-size: 30px;
+}
+
+.celcius, .kelvin, .fahrenheit, .rankine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    caret-color: #003333;
+    border-radius: 6px;
+    padding: 0 10px;
+    flex: 5;
+    height: 60px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.symbol {
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    border-radius:  6px ;
+    background-color: #4d5964;
+    font-size: 30px;
+    color: darkturquoise;
+    text-align: center;
+}
+
+.button {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#resetButton {
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        justify-content: flex-start;
+    }
+    .temp-container {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    input {
+        font-size: 16px;
+    }
+    .symbol {
+        font-size: 24px;
+    }
+}

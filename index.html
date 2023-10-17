@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="temp-container">
+        <div class="header-name">
+            <h1>Temperature Converter</h1>
+            <span class="icon-temperature">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+            </span>
+        </div>
+        <div class="celcius">
+            <input type="number" id="celciusInput" placeholder="Celcius">
+            <span class="symbol">&degC</span>
+        </div>
+        <div class="kelvin">
+            <input type="number" id="kelvinInput" placeholder="Kelvin">
+            <span class="symbol">&degK</span>
+        </div>
+        <div class="fahrenheit">
+            <input type="number" id="fahrenheitInput" placeholder="Fahrenheit">
+            <span class="symbol">&degF</span>
+        </div>
+        <div class="rankine">
+            <input type="number" id="rankineInput" placeholder="Rankine">
+            <span class="symbol">&degR</span>
+        </div>
+        <div class="button">
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
